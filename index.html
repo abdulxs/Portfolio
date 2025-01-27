@@ -12,7 +12,7 @@
         <div class="container header-content">
             <h1>Abdulgafar Yusuf</h1>
             <nav class="nav-links">
-                <a href="/">Home</a>
+                <a href="#">Home</a>
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#research">Research</a>
@@ -176,30 +176,6 @@
             </div>
         </div>
     </footer>
-    <script>
-    // Fetch and display poems
-    fetch('poems.json')
-      .then(response => response.json())
-      .then(data => {
-        const container = document.querySelector('.poems-container');
-        
-        data.poems.forEach(poem => {
-          const poemCard = `
-            <article class="poem-card">
-              <h3 class="poem-title">${poem.title}</h3>
-              <div class="poem-date">${poem.date}</div>
-              <pre class="poem-content">${poem.content}</pre>
-            </article>
-          `;
-          container.insertAdjacentHTML('beforeend', poemCard);
-        });
-      })
-      .catch(error => {
-        console.error('Error loading poems:', error);
-        document.querySelector('.poems-container').innerHTML = 
-          '<p>Error loading poems. Please try again later.</p>';
-      });
-    </script>
     
 </body>
 </html>
