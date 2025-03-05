@@ -7,22 +7,14 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <nav class="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="poems.html" class="nav-link active">Poems</a>
-    </nav>
+    <div id="navbar-container"></div>
 
     <section class="poems-container">
         <h1 class="section-title">My wall of poetry</h1>
+        <p class="page-description">
+            This page contains scribblings I manage to conjure as a pastime. Thank you for reading!
+        </p>
         
-        <article class="poem-card">
-            <h3 class="poem-title">Pilot</h3>
-            <div class="poem-date">January 2025</div>
-            <pre class="poem-content">
-This page contains scribblings I manage to conjure as a pastime. Thank you for reading!
-            </pre>
-        </article>
-
         <!-- Add more poem cards here -->
     </section>
     <script>
@@ -49,5 +41,6 @@ This page contains scribblings I manage to conjure as a pastime. Thank you for r
           '<p>Error loading poems. Please try again later.</p>';
       });
     </script>
-</body>
+    <script src="scripts/mobile-menu.js"></script>
+  </body>
 </html>
