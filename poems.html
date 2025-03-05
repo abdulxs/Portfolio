@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdul's Poetry</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div id="navbar-container"></div>
@@ -15,8 +16,9 @@
             This page contains scribblings I manage to conjure as a pastime. Thank you for reading!
         </p>
         
-        <!-- Add more poem cards here -->
+        <!-- Poem cards injected via JS -->
     </section>
+    
     <script>
     // Fetch and display poems
     fetch('poems.json')
@@ -42,5 +44,5 @@
       });
     </script>
     <script src="scripts/mobile-menu.js"></script>
-  </body>
+</body>
 </html>
